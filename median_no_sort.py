@@ -118,7 +118,7 @@ print('test8 median=', find_med(data), 'expect: -5', '\n')
 print('-------------Mix-------------')
 
 data = [14, -1, -2, 4, -6, -5,  9, 12]
-print('test9 median=', find_med(data), 'expect: -5.5', '\n')
+print('test9 median=', find_med(data), 'expect: 1.5', '\n')
 
 data = [2, 8, -3, -9, -6]
 print('test10 median=', find_med(data), 'expect: -3', '\n')
@@ -128,4 +128,4 @@ data = [2, -20, -3, 18, -1, 0]
 print('test11 median=', find_med(data), 'expect: -1', '\n')
 
 data = [2, -20, -3, 18, -1, 0, 4]
-print('test12 median=', find_med(data), 'expect: -0.5', '\n')
+print('test12 median=', find_med(data), 'expect: 0.5', '\n')
