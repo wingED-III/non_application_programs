@@ -1,13 +1,15 @@
 def find_med(data):
     print('input:', data)
 
+    # get rid of 0
     data = [i for i in data if i != 0]
+    if data == []:
+        return None
 
     copy_data = data.copy()
     copy_data.sort()
     print('Python_builted_in_sort:', copy_data)
-    if data == []:
-        return None
+
     # print('dfiltered_zero:',data)
     median = find_median_frequency_table(data)
 
@@ -24,6 +26,8 @@ def find_median_frequency_table(data):
         data = [minimum+i for i in data]
 
     print(data)
+
+    # create array store frequency of numbers
     # print('max:', max(data))
     table = [0 for i in range(max(data)+1)]
     for number in data:
@@ -37,6 +41,7 @@ def find_median_frequency_table(data):
     # for i, value in enumerate(table):
     #     print(i, ':', value)
 
+    # find median
     if n % 2 == 1:
         median_position1 = len(data)//2+1
         median_position2 = 0
